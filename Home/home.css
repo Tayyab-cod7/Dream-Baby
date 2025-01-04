@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* Navbar-Start */
+#nav {
+    background-color: #e3e6f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 200px 20px 200px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* Navbar-End */
+
+/* Hero-Start */
+#hero {
+    display: inline-block;
+}
+
+/*Hero-Image-Start */
+#hero {
+    background-image: url("/Home/Images/Girl.png");
+    margin-top: 30px;
+    margin-right: 20px;
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0 100px;
+    display: inline-block;
+    background-size: contain; 
+}
+/*Hero-Image-End */
+
+/*Hero-Text1-Start */
+#hero h4 {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 50px;
+    animation: fade-in 2s ease-in-out;
+    animation-iteration-count: infinite;
+    padding-bottom: 15px;
+    color: rgb(66, 63, 63);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*Hero-Text1-End */
+
+/*Hero-Text2-Start */
+#hero h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+#animated-heading {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #088178;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font: 3em sans-serif;
+    margin: 15px;
+}
+
+#changing-text {
+    display: inline-block;
+    opacity: 1;
+}
+
+#changing-text {
+    display: inline-block;
+    font-weight: bold;
+    color: #DC143C;
+}
+/* Hero-Text2-End */
+
+/* Hero-Text-Start */
+#hero p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+/* Hero-Text-End */
+
+/* Hero-Button-Start */
+#hero button {
+    background-image: url("/Home/Images/button.png");
+    background-color: transparent;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    color: #088178;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Hero-Button-End */
+/* Hero-End */
+
+/* Feature-Start */
+#feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.3rem;
+    transition: 4s ease;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.fe-box img {
+    width: 100%;
+    height: auto;
+}
+
+.box2 img {
+    margin-bottom: 40px;
+}
+
+#feature .fe-box {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.445);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 50px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(69, 62, 211, 0.845);
+    transition: 0.8s ease;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    background-color: #edbbc6;
+    border-radius: 4px;
+    color: #088178;
+    font-size: 13px;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #a7d78b;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #8cb4c5;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #a0ade4;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #e4bce4;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #f0d9c2;
+}
+/* Feature-End */
+
+/* First product Start  */
+#product1 h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+#product1 p {
+    margin: 15px 0 20px 0;
+    color: #465b52;
+}
+
+#product1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#product1 .pro {
+    width: 21%;
+    padding: 10px 12px;
+    border: 2px solid #b8e3be;
+    min-width: 250px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.651);
+    position: relative;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(69, 62, 211, 0.427);
+}
+
+#product1 .pro img {
+    width: 95%;
+    height: auto;
+}
+
+#product1 .pro img:hover {
+    transform: scale(1.1); 
+}
+
+#product1 .pro img{
+    width: 100%; 
+    transition: transform 0.3s ease; 
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro  span {
+    color: #606063;
+    font: size 12px;
+}
+
+#product1 .pro  h6 {
+    text-align: start;
+    padding-top: 5px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+#product1 .pro h5 {
+    text-align: start;
+    padding-top: 7px;
+    font-size: 700;
+    color: #088178;
+    font-size: 15px;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #9fcca6db;
+    border: none;
+    font-weight: 700;
+    color: #088178;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/* First product End  */
+
+/* Banner1-Start  */
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Home/Images/Banner 1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 40px 0;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 38px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636;
+}
+
+.normal {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff;
+}
+/* Banner1-End */
+
+/* Footer Start */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer h4 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.icon a i {
+    font-size: 40px;
+    color: #088178;
+    margin: 0 15px 0 15px;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+.icon a i:hover {
+    color: #FD1D1D;
+    transform: scale(1.5);
+    border-radius: 50px;
+}
+
+.col a:hover {
+    border-bottom: 1px solid #041e42;
+    transition: 0.5s ease-in;
+}
+/* Footer Start */
+
+/* Copyright-Section-Start */
+.copyright p {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    background-color: #041e42;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+/* Copyright-Section-Start */
+
+/* Responsive-start  */
+
+@media (min-width: 300px) and (max-width: 369px) {
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    #hero h4 {
+        font-size: 15px; 
+        position: absolute;
+        left: 27px;
+        top: 55px;
+        margin-top: 40px;
+    }
+    #hero h2 {
+        font-size: 20px;
+        position: absolute;
+        left: 25px;
+        top: 110px;
+    }
+    #hero h3 {
+        font-size: 20px;
+        position: absolute;
+        top: 130px;
+        left: 10px;
+    } 
+    #hero p {
+        font-size: 11px;
+        font-weight: bold;
+        position: absolute;
+        top: 190px;
+        left : 28px;
+    }
+    #hero a {
+        position: absolute;
+        top: 210px;
+        left: -10px;
+        margin-top: 25px;
+    }
+    #hero {
+        height: 30vh; 
+        background-size: 50%; 
+        background-position: center; 
+        padding: 0 20px; 
+        background-position: right 75px ;        
+    }
+    #hero {
+        background-image: none;
+    }
+    #feature {
+        gap: 0.1rem;
+        padding: 0 20px 0 20px; 
+        margin : 20px 0 20px 0; 
+        padding: 0;
+        margin: 0;
+    }
+    #feature .fe-box {
+        margin: 20px 0 0px 0;
+        width: 140px;
+        height: 200px;
+    }
+    #product1 {
+        padding: 0px;
+    }
+    #product1 h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    #product1 .pro  {
+        margin: 10px ;
+        min-width: 130px;
+    }
+    #banner h2 {
+        font-size: 24px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .section-p1{
+        padding: 20px ;
+    }
+    footer h4 {
+        padding-bottom: 10px;
+    }
+    .icon a i {
+        font-size: 20px;
+    }
+    footer h4 {
+        font-size: 20px;
+    }
+    #nav {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        font-size: 16px;
+    }
+    #navbar li {
+        list-style: none;
+        padding: 0 10px 0 10px ;
+        position: relative;
+    }
+    .pro a .cart  {
+        position: absolute;
+        top: 260px;
+    }
+}  
+
+@media (min-width: 370px) and (max-width: 600px) {   
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    #hero h4 {
+        font-size: 18px; 
+        position: absolute;
+        left: 27px;
+        top: 55px;
+        margin-top: 40px;
+    }
+    #hero h2 {
+        font-size: 25px;
+        position: absolute;
+        left: 25px;
+        top: 110px;
+    }
+    #hero h3 {
+        font-size: 24px;
+        position: absolute;
+        top: 130px;
+        left: 10px;
+    } 
+    #hero p {
+        font-size: 13px;
+        font-weight: bold;
+        position: absolute;
+        top: 190px;
+        left : 28px;
+    }
+    #hero a {
+        position: absolute;
+        top: 210px;
+        left: -10px;
+        margin-top: 25px;
+    }
+    #hero {
+        height: 30vh; 
+        background-size: 50%; 
+        background-position: center; 
+        padding: 0 20px; 
+        background-position: right 75px ;        
+    }
+    #feature {
+        gap: 0.1rem;
+        padding: 0 20px 0 20px; 
+        margin : 20px 0 20px 0; 
+    }
+    #feature .fe-box {
+        margin: 20px 0 0px 0;
+        width: 150px;
+        height: 200px;
+    }
+    #product1 {
+        padding: 0px;
+    }
+    #product1 h2 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    #product1 .pro  {
+        margin: 10px ;
+        min-width: 155px;
+    }
+    #banner h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .section-p1{
+        padding: 20px ;
+    }
+    footer h4 {
+        padding-bottom: 10px;
+    }
+    .icon a i {
+        font-size: 30px;
+    }
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    #hero h4 {
+        font-size: 24px; 
+        position: absolute;
+        left: 27px;
+        top: 50px;
+        margin-top: 40px;
+    }
+    #hero h2 {
+        font-size: 30px;
+        position: absolute;
+        left: 25px;
+        top: 110px;
+    }
+    #hero h3 {
+        font-size: 35px;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    } 
+    #hero p {
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        top: 190px;
+        left : 28px;
+    }
+        #hero {
+        height: 30vh; 
+        background-size: 50%; 
+        background-position: center; 
+        padding: 0 20px; 
+        background-position: right 80px ;        
+    }
+    #hero a {
+        position: absolute;
+        top: 210px;
+        left: -10px;
+        margin-top: 25px;
+    }
+    #feature {
+        gap: 0.5rem;
+        padding: 0 20px 0 20px; 
+        margin : 20px 0 20px 0; 
+    }
+    #feature .fe-box {
+        margin: 20px 0 0px 0;
+        width: 150px;
+        height: 200px;
+    }
+    #product1 {
+        padding: 0px;
+    }
+    #product1 h2 {
+        font-size: 34px;
+        margin-top: 10px;
+    }
+    #product1 .pro  {
+        margin: 10px ;
+        min-width: 170px;
+    }
+    #banner h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .section-p1{
+        padding: 20px ;
+    }
+    footer h4 {
+        padding-bottom: 16px;
+    }
+    .icon a i {
+        font-size: 40px;
+    }
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    } 
+    #hero h4 {
+        font-size: 24px; 
+        position: absolute;
+        left: 27px;
+        top: 50px;
+        margin-top: 40px;
+    }
+    #hero h2 {
+        font-size: 30px;
+        position: absolute;
+        left: 25px;
+        top: 110px;
+    }
+    #hero h3 {
+        font-size: 35px;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    } 
+    #hero p {
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        top: 190px;
+        left : 28px;
+    }
+    #hero a {
+        position: absolute;
+        top: 210px;
+        left: -10px;
+        margin-top: 25px;
+    }
+}
+
+/* Responsive-End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
